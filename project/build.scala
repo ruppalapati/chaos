@@ -38,7 +38,6 @@ object ChaosBuild extends Build {
   lazy val baseSettings = Defaults.defaultSettings ++ Seq (
     organization := "mesosphere",
     scalaVersion := "2.10.4",
-    crossScalaVersions := Seq("2.11.7"),
     scalacOptions in Compile ++= Seq("-encoding", "UTF-8", "-target:jvm-1.7", "-deprecation", "-feature", "-unchecked", "-Xlog-reflective-calls", "-Xlint"),
     javacOptions in Compile ++= Seq("-encoding", "UTF-8", "-source", "1.7", "-target", "1.7", "-Xlint:unchecked", "-Xlint:deprecation"),
     resolvers ++= Seq(
